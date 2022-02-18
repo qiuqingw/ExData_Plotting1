@@ -21,5 +21,5 @@ table(hpcdata_2$Date)
 
 #Create plot 1
 hist(hpcdata_2[,3], xlab = "Global Active Power (kilowatts)", col = "Red", main = "Global Active Power")
-dev.copy(png, file = "plot 1.png")
+dev.copy(png, file = "plot 1.png", width = 480, height = 480, units = "px")
 dev.off()
