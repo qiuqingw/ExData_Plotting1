@@ -37,6 +37,7 @@ with(hpcdata_2,{
         with(hpcdata_2, plot(newdate, Sub_metering_1, xlab="", ylab = "Energy sub metering", type = "l"))
         lines(hpcdata_2$newdate, hpcdata_2$Sub_metering_2, col = "red")
         lines(hpcdata_2$newdate, hpcdata_2$Sub_metering_3, col = "blue")
+        legend("topright",c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col=c("black", "red", "blue"), lty=1, lwd=1.5, cex=0.8)
         
         plot(newdate, Global_reactive_power, xlab="datetime", type = "l")
         
